@@ -1,0 +1,81 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario2</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloa.css">
+	<link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+	<header >
+		<div class="logo-titulo">
+         <img src="img/logo.png" alt="Logo Xirani's">
+         <h1>Xirani’S</h1>
+      </div>
+	</header>
+
+	<nav>
+		<a href="index.html">Inicio</a>
+		<a href="quienessomos.html">¿Quiénes somos?</a>
+		<a href="catalogo.html">Catalogo</a>
+		<a href="contacto.html">Contactanos</a>
+		<a href="Admin.html">Administracion</a>
+	</nav>
+	
+	<section>
+		<h2>Formulario Productos</h2>
+		<form action="productos.php" method="POST">
+		
+		    <label for="laprodu">Producto:</label>
+			<input type="text" name="produ">
+			<br>
+
+			<label for="lapre">Precio:</label>
+			<input type="text" name="precio">
+			<br>
+
+			<label for="lastock">Stock:</label>
+			<input type="text" name="stock">
+			<br>
+		
+			<label for="laacce">Tipo de accesorio:</label>
+			<select name="acces">
+				<option value="Anillo">Anillo</option>
+				<option value="Brazalete">Brazalete</option>
+				<option value="Collar">Collar</option>
+				<option value="Aretes">Aretes</option>
+			</select>
+			<br>
+		
+			<label for= "lamater">Material:</label>
+			<select name="material">
+				<option value="Oro">Oro</option>
+				<option value="Plata">Plata</option>
+				<option value="Platino">Platino</option>
+				<option value="Acero inoxidable">Acero inoxidable</option>
+			</select>
+			<br>
+	
+			<label for= "lapiedra">Incrustes:</label>
+			<input type="text" name="piedra">
+			<br>
+
+			<input type="submit" name="Guardar" id="boton1" value="Enviar">
+			<input type="reset" name="Cancelar" id="boton2" value="Cancelar">	
+	</form>
+
+	
+</section>
+
+    <footer>
+    	TODOS LOS DERECHOS RESERVADOR - CBTIS 206<br>
+		PROGRAMACION WEB 2025 - MAESTRA ALONDRA ZAVALA.<br>
+		PÁGINA DE ARECHIGA, ENCISO, GONZALEZ, LOPEZ Y MONAREZ.<br>
+		Las imagenes no son de nuestro dominio
+    </footer>
+
+
+</body>
+</html>

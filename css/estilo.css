@@ -1,0 +1,154 @@
+/* Css general*/
+body{
+  background-size: 100%;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+/*Encabezado*/
+header{
+  background-color: #000000 ; 
+  color: white; 
+  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+
+/*que el logo este junto al nombre*/
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin: 3vh;
+}
+
+.logo-titulo img {
+  width: 5vw;
+  width: auto;
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.logo-titulo h1 {
+  margin: 0;
+  font-size: 5vw;
+}
+
+/*caja nav*/
+nav{
+  line-height: 30px;
+  background-color: #ecb7c0 ; /*color de fondo del nav con ese codigo hexadecimal */
+  color: white;
+  height: 30px; /*altura de la caja nav  */
+  padding: 1rem;
+  font-size: 1em; /*tamaño de las letter */
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+nav a {
+  color: white;             /* Color del texto */
+  text-decoration: none;    /* Sin subrayado */
+  margin: 0 1em;            /* Separación entre enlaces */
+}
+
+nav a:hover{
+  /*estoy configurando los enlaces cuando los clickeo */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Sección principal */
+section {
+  width: 60%;
+  margin: 0 auto;         /* Esto centra el bloque horizontalmente */
+  color: black;
+  text-align: justify;
+  font-size: 1em;
+  padding: 0;
+}
+
+/*pie de página*/
+footer
+{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.banner{
+  width: 90vw; /* Un poco menos que 100% para que tenga margen */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 20
+
+
+}
+
+.desc {
+  margin: auto;
+  width: 40%;
+  min-width: 60vh;
+  text-align: justify;
+}
+
+
+img {
+  width: 20vh; 
+  height: auto;
+  display: block;
+  margin: auto;
+  clear: right;
+  flex: 60vh;
+}
+
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
+main .fondo{
+  text-align: center;
+  width: 40%;
+}
+main .fondo img{
+  max-width: 40%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+main .fondo img:hover{
+  //que cuando le paso el mouse por encima a las img
+  transform: scale(1.05);
+}
+
+.section img:hover {
+            transform: scale(0.95); /* Reduce el tamaño al 95% */
+}
+
+.grid-item {
+            background: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+}
+.grid-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease; /* Suaviza el efecto de encogimiento */
+}
+.grid-item img:hover {
+            transform: scale(0.95); /* Reduce el tamaño al 95% */
+}

@@ -1,0 +1,150 @@
+/* Css de Contactanos*/
+body {
+  background-size: 100%;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+/*Encabezado*/
+header {
+  background-color: #000000 ; 
+  color: white;   
+  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+
+/*que el logo este junto al nombre*/
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin: 3vh;
+}
+
+.logo-titulo img {
+  width: 5vw;
+  width: auto;
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.logo-titulo h1 {
+  margin: 0;
+  font-size: 5vw;
+}
+
+/*caja nav*/
+nav {
+  background-color: #ecb7c0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;             /* Color del texto */
+  text-decoration: none;    /* Sin subrayado */
+  margin: 0 1em;  
+}
+
+
+/* Sección principal */
+section {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+/* Contenedor centrado */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Tabla de logo y círculos, lo que está arriba del formulario de contactanos*/
+table {
+  margin: 0 auto;
+}
+
+.circulo {
+  width: 6vh; /* Proporcional a la altura del viewport */
+  height: auto;
+}
+
+.punto {
+  width: 4vh;
+  height: auto;
+}
+
+.punto,
+.circulo,
+.logo {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo {
+  width: 10vh;
+  height: auto;
+  border: 2px solid #ccc;
+}
+
+/* Inputs */
+input[type="text"] {
+  align-items: center;
+    padding: 2vh;
+    margin-bottom: 2vh;
+    border: 0.2vh solid #d7ccc8;
+    background-color: white;
+
+}
+
+.corto {
+  width: 45%;
+  margin: 0.5rem 1%;
+}
+
+.largo {
+  width: 94%;
+}
+
+.grande {
+  width: 94%;
+  height: 100px;
+}
+
+/* Botones */
+input[type="submit"], input[type="reset"] {
+  font-family: 'Verdana';
+    background-color: #ecb7c0;
+    color: black;
+    padding: 1.5vh 3vw; /* Adaptado con vh y vw */
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    margin: 1vh;
+    transition: background-color 0.3s ease;
+    width: 60%;
+}
+
+/*para que se cambien de color los botones*/
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: gray;
+}
+
+/* Pie de página */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
