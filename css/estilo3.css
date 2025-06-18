@@ -148,3 +148,97 @@ footer {
   font-size: 0.9rem;
   line-height: 1.6;
 }
+
+@media (max-width: 992px) {
+  .logo-titulo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-titulo img {
+    max-height: 120px;
+  }
+
+  .logo-titulo h1 {
+    font-size: 6vw;
+  }
+
+  section, main .fondo {
+    width: 80%;
+  }
+
+  nav {
+    font-size: 0.9em;
+    padding: 0.8rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5em;
+  }
+
+  img {
+    width: 35vh;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  table img {
+    width: 100%;
+  }
+}
+
+/* CELULARES (pantallas menores a 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .logo-titulo {
+    flex-direction: column;
+    gap: 10px;
+    margin: 2vh;
+  }
+
+  .logo-titulo h1 {
+    font-size: 8vw;
+  }
+
+  nav {
+    font-size: 0.85em;
+    height: auto;
+    line-height: 1.8;
+    padding: 0.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.3em 0;
+  }
+
+  section, main .fondo {
+    width: 95%;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  table {
+    width: 95%;
+  }
+
+  table img {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  main .fondo img {
+    max-width: 100%;
+  }
+}
